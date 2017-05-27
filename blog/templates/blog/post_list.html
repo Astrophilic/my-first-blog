@@ -53,6 +53,14 @@
 
 </head>
 <body>
+	{% for post in posts %}
+	    <div>
+	        <p>published: {{ post.published_date }}</p>
+	        <h1><a href="">{{ post.title }}</a></h1>
+	        <p>{{ post.text|linebreaksbr }}</p>
+	    </div>
+	{% endfor %}
+
 <hr/>
 
 <h1><u><center>Welcome to Codesonorous</u></h1>
@@ -65,7 +73,6 @@
 <hr/>
 
 for more details you can <a href="mailto:pankajhz99@gmail.com" title="he is awesome"> mail</a>
-
 
 
 
